@@ -1,0 +1,68 @@
+.home-container {
+	max-width: 800px;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: #f9f9f9;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	color: #2c3e50;
+}
+.home-container h1,
+.home-container h2,
+.home-container h3 {
+	color: #2c3e50;
+}
+.home-container p,
+.home-container ul {
+	color: #34495e;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 10px;
+	border-radius: 5px;
+}
+.home-buttons {
+	margin-top: 20px;
+}
+.btn {
+	background-color: #2c3e50;
+	color: white;
+	padding: 10px 15px;
+	text-decoration: none;
+	border-radius: 5px;
+	margin-right: 10px;
+	display: inline-block;
+}
+.btn:hover {
+	background-color: #1a252f;
+}
+.navbar {
+	position: ;
+	background-color: #2c3e50;
+	padding: 15px 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+	font-size: 1.3em;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.navbar-brand .icon {
+	width: 40px;
+	height: 40px;
+	margin: 0 0.5rem 0 0;
+}
+.navbar-links a {
+	margin-left: 15px;
+	color: white;
+	text-decoration: none;
+	font-size: 1.1em;
+	transition: color 0.3s ease;
+}
+.navbar-links a:hover {
+	color: #f39c12;
+}
