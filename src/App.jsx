@@ -25,8 +25,15 @@ function App() {
 							Consulenza Energetica
 						</div>
 						<div className="navbar-links">
-							<Link to="/">Home</Link>
-							<Link to="/login">Login</Link>
+							<Link className="active" to="/">
+								Home
+							</Link>
+							<Link className="nav-btn-1" to="/login">
+								Accedi
+							</Link>
+							<Link className="nav-btn-2" to="/upload-bill">
+								Prova
+							</Link>
 							<Link to="/contatti">Contatti</Link>
 						</div>
 					</nav>
