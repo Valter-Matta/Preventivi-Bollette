@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Provider } from "react-redux";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./App.css";
 import Home from "./Home/Home";
 import Login from "./Login/Login";
@@ -25,16 +25,24 @@ function App() {
 							Consulenza Energetica
 						</div>
 						<div className="navbar-links">
-							<Link className="active" to="/">
+							<NavLink
+								className={({ isActive }) => (isActive ? "active" : "")}
+								to="/"
+							>
 								Home
-							</Link>
-							<Link className="nav-btn-1" to="/login">
+							</NavLink>
+							<NavLink className="nav-btn-1" to="/login">
 								Accedi
-							</Link>
-							<Link className="nav-btn-2" to="/upload-bill">
+							</NavLink>
+							<NavLink className="nav-btn-2" to="/upload-bill">
 								Prova
-							</Link>
-							<Link to="/contatti">Contatti</Link>
+							</NavLink>
+							<NavLink
+								className={({ isActive }) => (isActive ? "active" : "")}
+								to="/contatti"
+							>
+								Contatti
+							</NavLink>
 						</div>
 					</nav>
 					<Routes>
