@@ -6,16 +6,15 @@ body {
 	color: #333;
 	display: flex;
 	justify-content: center;
+
+	overflow: hidden;
 }
-.active {
-	border-bottom: 2px solid rgb(255, 255, 255);
-}
+
 .app-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	min-height: 100vh;
 }
 
 .home-container {

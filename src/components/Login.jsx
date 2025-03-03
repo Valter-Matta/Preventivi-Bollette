@@ -1,12 +1,12 @@
 import { useState } from "react";
-import "./Login.css";
+import "../css-components/Login.css";
 
 function Login() {
 	const [isRegistering, setIsRegistering] = useState(false);
 
 	return (
-		<div className="container">
-			<div className="card">
+		<div className="container-login">
+			<div className="card-login">
 				<div className="card-header">
 					<h2>{isRegistering ? "Registrazione" : "Accesso"}</h2>
 				</div>

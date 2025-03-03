@@ -1,4 +1,4 @@
-import "./Home.css";
+import "../css-components/Home.css";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -11,8 +11,8 @@ function Home() {
 				<img
 					src="https://i.pinimg.com/564x/e8/e4/a5/e8e4a5fe5344f7dbe7decaad145a44b3.jpg"
 					alt=""
-					width={"300px"}
-					height={"300px"}
+					width={"250px"}
+					height={"150px"}
 				/>
 			</div>
 			<p>
@@ -26,13 +26,19 @@ function Home() {
 				manualmente.
 			</p>
 			<h2>Tu sai cosa paghi?</h2>
-			<div>
-				<img src="/public/Cattura.PNG" alt="" />
+			<div className="img-details-cont">
+				<img
+					className="img-details"
+					src="/public/Cattura.PNG"
+					alt=""
+					height={"350px"}
+					width={"700px"}
+				/>
 			</div>
 			<p>
 				<span className=" spesa-variabile">"Spesa per il gas naturale":</span>{" "}
 				unico costo variavile, su cui puoi risparmiare, è la spesa che il tuo
-				fornitore ti addebita. Sulla base del{" "}
+				fornitore ti addebita sulla base del{" "}
 				<span className=" consumo">Consumo rilevato</span>
 			</p>
 			<p>
